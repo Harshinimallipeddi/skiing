@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.2;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+
+html {
+    padding: 0;
+}
+
+header {
+    top: 0;
+    left: 0; 
+    position: fixed;
+    width: 100%; 
+    height: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    padding: 20px;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 5rem;
+    vertical-align: middle;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+.nav-links li a:hover {
+    color:#fe7219;
+}
+.header-content {
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    color: #313131;
+}
+
+.header-content h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem;
+    margin-bottom: 6px;
+    font-weight: bolder;
+}
+
+.header-content p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    min-height: 2600px;
+    margin-top: 100vh;
+    margin-right: 0px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #f9f9f9;
+    box-shadow: 15px 0 3px 0 #000;
+}
+.a1{
+    position: absolute;
+    width: 100%;
+    min-height: 637px;
+    background-color: #fe7219;
+}
+.a2{
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 80px;
+}
+.heading{
+    margin-bottom: 20px;
+    font-family: Oswald, sans-serif;
+    color: #f9f9f9;
+    font-size: 65px;
+    line-height: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+.para{
+    margin-bottom: 40px;
+    padding-left: 170px;
+    max-width: 1000px;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    color: #f9f9f9;
+    font-size: 18px;
+}
+.people .layout .p1 {
+    position: relative;
+}
+
+.people .layout .p1 img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover; 
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.people .layout .p1 h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    opacity: 0;
+    text-align: center;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+}
+
+.people .layout .p1:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.people .layout .p1:hover h1 {
+    opacity: 1;
+}
+
+.people .layout.grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.people .layout .p1 {
+    flex: 1;
+    max-width: 190px;
+}
+
+.custom-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin-top:5rem;
+    margin-bottom: 5rem;
+    padding: 40px;
+}
+
+.custom-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.custom-heading {
+    padding-top: 5rem;
+    padding-left: 3rem;
+    font-size: 50px;
+    font-weight: 800;
+    color: #5e5a5a;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+}
+
+span{
+    color: #fe7219;
+}
+.custom-column ul {
+    padding-left: 3rem;
+    font-size: 26px;
+    color: #282727;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.custom-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);   
+    gap: 10px;                            
+}
+  
+.custom-image1, .custom-image2, .custom-image3, .custom-image4 {
+    width: 200px; 
+    box-shadow: -4px -4px 17px 0 rgba(0, 0, 0, 0.14), 11px 11px 20px 0 rgba(0, 0, 0, 0.4); 
+    height: 250px; 
+}
+.custom-image1:hover, .custom-image2:hover, .custom-image3:hover, .custom-image4:hover{
+    transform: scale(1.1);
+}
+.custom-image2,.custom-image4{
+    margin-top: 10%;
+}
+
+.arts{
+    position: relative;
+    display: flex;
+    min-height: 700px;
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+.orange{
+    position: absolute;
+    width: 100%;
+    min-height: 500px;
+    background-color: #fe7219;  
+}
+.row{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.cols{
+    flex: 0 0 auto;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.column1{
+    height: 600px;
+}
+.col{
+    position:absolute;
+    float: left;
+    top: 94rem;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.coo{
+    width: 47%;
+}
+.pic{
+    height: 96%;
+    background-image: url(skiing.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: -4px -4px 17px 0 rgba(0, 0, 0, 0.14), 11px 11px 20px 0 rgba(0, 0, 0, 0.4);
+}
+.text{
+    position: absolute;
+    left: 110%;
+    display: flex;
+    height: 500px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 41px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.headings{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: Oswald, sans-serif;
+    color: #f9f9f9;
+    font-size: 48px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.paragraph{
+    width: 400px;
+    margin-bottom: 0px;
+    font-family: Lato, sans-serif;
+    color: #f9f9f9;
+    font-size: 16px;
+    text-align: left;
+}
+/* Rest of your CSS styles... */
+
+.footer-sec {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    width: 100vw;
+    margin-top: 45rem;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(foo.jpeg);
+    background-position: 50% 41%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(0%);
+}
+
+.back {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: hsla(0, 0%, 97.7%, 0.7);
+}
+
+.footer-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #3b3d3f;
+}
+
+.footer-content h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.subscribe-form input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #fe7219;
+    color: #3b3d3f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscribe-form button:hover {
+    background-color: #f55b00;
+    color: #fff;
+}
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.fa-facebook {
+    color: #3b3d3f;
+}
+
+.fa-twitter-square {
+    color: #3b3d3f;
+}
+
+.fa-instagram-square {
+    color: #3b3d3f;
+}
+
+.fa-facebook:hover {
+    color: #f55b00;
+}
+
+.fa-twitter-square:hover {
+    color: #f55b00;
+}
+
+.fa-instagram-square:hover {
+    color: #f55b00;
+}
